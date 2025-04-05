@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://chheijvfnyv5s"]
+
+[ext_resource type="Script" uid="uid://t0v5tn68xyx5" path="res://scene_4.gd" id="1_hgmne"]
+[ext_resource type="Texture2D" uid="uid://cxa4rhrqd70fa" path="res://backdrop outro.png" id="2_rhpos"]
+
+[node name="scene_4" type="Node2D"]
+script = ExtResource("1_hgmne")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 40.0
+offset_right = 258.0
+offset_bottom = 111.0
+theme_override_font_sizes/font_size = 26
+text = "Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 97.0
+offset_top = 126.0
+offset_right = 204.0
+offset_bottom = 165.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(157, 140)
+scale = Vector2(0.371094, 0.339693)
+texture = ExtResource("2_rhpos")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

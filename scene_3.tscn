@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5h5ngcamclnh"]
+
+[ext_resource type="Script" uid="uid://b1vqni7bspibi" path="res://chat.gd" id="1_u4qsq"]
+[ext_resource type="Texture2D" uid="uid://cbva0xgo8jox4" path="res://backdro.png" id="2_d3j8c"]
+
+[node name="scene_3" type="Node2D"]
+
+[node name="Chat" type="Node" parent="."]
+script = ExtResource("1_u4qsq")
+
+[node name="SendButton" type="Button" parent="Chat"]
+offset_left = 164.0
+offset_top = 121.0
+offset_right = 331.0
+offset_bottom = 152.0
+text = "Submit"
+
+[node name="PlayerInput" type="LineEdit" parent="Chat"]
+offset_left = 32.0
+offset_top = 29.0
+offset_right = 463.0
+offset_bottom = 104.0
+
+[node name="ResponseDisplay" type="RichTextLabel" parent="Chat"]
+offset_left = 37.0
+offset_top = 170.0
+offset_right = 464.0
+offset_bottom = 359.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(245, 194)
+scale = Vector2(0.584135, 0.460938)
+texture = ExtResource("2_d3j8c")

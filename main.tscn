@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgdtxpoqk76p1"]
+
+[ext_resource type="Script" uid="uid://uvmc52lmdbwr" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cbva0xgo8jox4" path="res://backdro.png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://b4257n4sl7cgp" path="res://lotus png.png" id="3_1bvp3"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 101.0
+offset_top = 110.0
+offset_right = 202.0
+offset_bottom = 162.0
+text = "Start"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(152, 123)
+scale = Vector2(0.354567, 0.285156)
+texture = ExtResource("2_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer/Sprite2D"]
+position = Vector2(-2.82033, -161.315)
+scale = Vector2(0.642373, 0.651739)
+texture = ExtResource("3_1bvp3")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

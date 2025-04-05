@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://728wop7slayi"]
+
+[ext_resource type="Script" uid="uid://btiivrmhjlrx6" path="res://scene_3_5.gd" id="1_717mj"]
+[ext_resource type="Texture2D" uid="uid://cbva0xgo8jox4" path="res://backdro.png" id="2_bafyc"]
+
+[node name="scene_3_5" type="Node2D"]
+script = ExtResource("1_717mj")
+
+[node name="Model_Response" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 184.0
+offset_bottom = 39.0
+
+[node name="PlayerInput_2" type="LineEdit" parent="."]
+offset_left = 47.0
+offset_top = 49.0
+offset_right = 225.0
+offset_bottom = 105.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(138.188, 119.563)
+scale = Vector2(0.326472, 0.289513)
+texture = ExtResource("2_bafyc")
