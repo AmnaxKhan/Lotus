@@ -6,7 +6,7 @@ A series of decisions and responses based on an AI model built to make the user 
 ## Tag Line
 **Two Voices, One Choice**
 
-## Key Elements
-- **Image**: ![Lotus Flower](lotusflower.jpg)
+## Two AI-based Characters
 - **Yin**: Emotional Value response
 - **Yang**: Logical Value response
+- **Image**: ![Lotus Flower](lotusflower.jpg)
