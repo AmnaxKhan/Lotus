@@ -7,6 +7,6 @@ A series of decisions and responses based on an AI model built to make the user 
 **Two Voices, One Choice**
 
 ## Key Elements
-- **Image**: Lotus Flower
+- **Image**: ![Lotus Flower](lotus flower.jpeg)
 - **Yin**: Emotional Value response
 - **Yang**: Logical Value response
